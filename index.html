@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Segitiga Keren</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+  <div class="hero-overlay">
+    <h1>Katik</h1>
+    <p>Menghitung Luas dan Keliling Segitiga Dengan Mudah</p>
+  </div>
+
+</header>
+<button id="toggleTheme" class="theme-toggle">🌙</button>
+
+  <main class="container">
+    <!-- Luas -->
+    <section class="card">
+      <h2>Luas Segitiga</h2>
+      <img src="/2.jpg" class="rumus-img" alt="Ilustrasi segitiga">
+      <div class="rumus">
+        <p><strong>Rumus:</strong> L = ½ × a × t</p>
+        <ul>
+          <li>L = Luas</li>
+          <li>a = Alas</li>
+          <li>t = Tinggi</li>
+        </ul>
+      </div>
+      <input type="number" id="luasAlas" placeholder="Masukkan alas (cm)">
+      <input type="number" id="luasTinggi" placeholder="Masukkan tinggi (cm)">
+      <button onclick="hitungLuas()">Hitung</button>
+      <div class="result" id="luasHasil"></div>
+      <button class="reset" onclick="resetLuas()">Reset</button>
+    </section>
+
+    <!-- Keliling -->
+    <section class="card">
+      <h2>Keliling Segitiga</h2>
+      <img src="/1.jpg" class="rumus-img" alt="Ilustrasi segitiga keliling">
+      <div class="rumus">
+        <p><strong>Rumus:</strong> K = a + b + c</p>
+        <ul>
+          <li>K = Keliling</li>
+          <li>a = Sisi A</li>
+          <li>b = Sisi B</li>
+          <li>c = Sisi C</li>
+        </ul>
+      </div>
+      <input type="number" id="sisiA" placeholder="Masukkan sisi A (cm)">
+      <input type="number" id="sisiB" placeholder="Masukkan sisi B (cm)">
+      <input type="number" id="sisiC" placeholder="Masukkan sisi C (cm)">
+      <button onclick="hitungKeliling()">Hitung</button>
+      <div class="result" id="kelilingHasil"></div>
+      <button class="reset" onclick="resetKeliling()">Reset</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Katik - kalkulator matematik</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
